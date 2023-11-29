@@ -148,9 +148,9 @@ services:
         "max_wal_senders=1",
       ]
     environment:
-      POSTGRES_USER: sentry
+      POSTGRES_USER: postgres
       POSTGRES_DB: sentry
-      POSTGRES_PASSWORD: sentry-password
+      POSTGRES_PASSWORD: password
     ports:
       - "0.0.0.0:5432:5432"
     entrypoint: /opt/sentry/postgres-entrypoint.sh
